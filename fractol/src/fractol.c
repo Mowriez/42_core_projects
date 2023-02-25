@@ -6,7 +6,7 @@
 /*   By: mtrautne <mtrautne@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/28 17:58:11 by mtrautne          #+#    #+#             */
-/*   Updated: 2023/01/26 14:13:25 by mtrautne         ###   ########.fr       */
+/*   Updated: 2023/01/15 20:42:56 by mtrautne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ int	main(int argc, char *argv[])
 	if (ft_input_check(argc, argv) == 0)
 		return (0);
 	vars = ft_setup_mlx(argv[1], argv[2]);
-	if (vars == NULL)
-		return (0);
 	ft_calc_fractal(vars);
 	mlx_key_hook(vars->win_ptr, ft_keyboard_input, &*vars);
 	mlx_hook(vars->win_ptr, 17, 0L, ft_end, vars);
@@ -33,8 +31,6 @@ t_fract	*ft_setup_mlx(char *width, char *fractal_set)
 	t_fract	*vars;
 
 	vars = (t_fract *)malloc(sizeof(t_fract));
-	if !(vars)
-		return(NULL);
 	vars->mlx_ptr = mlx_init();
 	vars->width = (double)ft_atoi(width);
 	vars->height = (double)round(vars->width / 1.77);
