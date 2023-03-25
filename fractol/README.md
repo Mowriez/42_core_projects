@@ -1,10 +1,7 @@
-# fractol
-Summary: A program that visualizes different fractals. Right now it can display the Mandelbrot, Julia, and
-burning ships sets. Uses a basic graphics library (MiniLibX) for the image/window handling part. 
-This library is contained in inc-directory.
+The fractol project is a programming exercise from School 42.
+It teaches students how to use complex numbers and graphics programming to render fractals in real-time. The task is to write a program that allows users to select and explore different fractals, using the arrow keys and mouse to navigate and zoom in and out of the fractal.
 
-Scope: Written for MacOS. MiniLibX requires Cocoa of MacOSX (AppKit) and OpenGL.
-Possible extension to Linux if I feel bored one day.
+This project was usefull to practice important concepts in mathematics, graphics programming, and user interface design. It also helped develop problem-solving skills and creativity, as I could experiment with different fractals and rendering techniques to create stunning visual effects.
 
 Prerequisites: Cocoa of MacOSX (AppKit) and OpenGL.
 
