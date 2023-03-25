@@ -1,5 +1,7 @@
 The libft project is a programming exercise from School 42.
-It teaches students how to implement common functions from the C standard library and create their own library of utility functions in C. 
+
+It teaches students how to implement common functions from the C standard library and create their own library of utility functions in C.
+
 The task is to write a set of functions that cover a wide range of functionality, from basic string manipulation and memory allocation to more 
 advanced data structures and input/output operations.
 
