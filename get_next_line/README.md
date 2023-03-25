@@ -1,4 +1,5 @@
 The get_next_line project is a programming exercise from School 42.
+
 It teaches students how to read input from a file descriptor and handle heap memory allocation in C. 
 
 The task is to write a function that reads from a file descriptor in chunks of "Buffer size", dynamically allocates memory to store these chunks, and returns a line as
