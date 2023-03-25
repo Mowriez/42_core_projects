@@ -1,6 +1,7 @@
 The pipex project is a programming exercise from School 42. 
 
-It teaches students how to work with pipes and file redirection in a Unix-like environment. 
+It teaches students how to work with pipes and file redirection in a Unix-like environment.
+
 The task is to write a program that simulates the behavior of the shell command pipeline for a narrow set of commands, allowing users to redirect 
 input and output streams between multiple commands.
 
