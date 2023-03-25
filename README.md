@@ -1,2 +1,3 @@
 # 42_core_projects
-All projects I finished in the 42 Wolfsburg curriculum
+
+All projects I finished in the core curriculum of school 42.
