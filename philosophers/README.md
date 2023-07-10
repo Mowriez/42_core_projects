@@ -1,25 +1,25 @@
-# Pipex
-
 # Project Overview
-The Pipex project involves creating a command-line program that mimics the behavior of the shell command pipeline (|). It takes two commands and redirects the output of the first command as the input of the second command, emulating the behavior of the shell's pipe operator.
+The Philosophers project involves creating a program that simulates the dining philosophers problem. The goal is to design a solution that allows the philosophers to alternate between thinking and eating while avoiding deadlocks and resource starvation.
 
 # Key Features
-The Pipex project includes the following key features:
+The Philosophers project includes the following key features:
 
-Command Execution: 
-Pipex allows users to execute two commands, just like in a shell pipeline. It handles the execution of the commands and sets up the appropriate file descriptors for input/output redirection.
+Concurrency Management: 
+The program manages multiple philosophers as separate threads or processes. It handles thread/process creation, synchronization, and communication.
 
-Input/Output Redirection: 
-Pipex supports input and output redirection using file descriptors. It allows users to specify input and output files for the commands, redirecting their standard input/output accordingly.
+Resource Allocation: 
+The philosophers compete for limited resources (forks) placed between them on the table. They must acquire the necessary forks to eat and release them when finished to allow other philosophers to use them.
 
-File Creation and Permissions: The program handles the creation of output files and sets the appropriate permissions for the newly created files.
+Deadlock Avoidance: 
+The program implements a solution to avoid deadlocks, where philosophers are unable to make progress due to resource contention. It ensures that philosophers can acquire the necessary forks without causing a circular wait condition.
 
-Error Handling: Pipex provides error handling mechanisms for various scenarios, such as invalid commands, file-related errors, and failures during command execution.
+Starvation Prevention: 
+The solution also addresses the issue of starvation, ensuring that no philosopher is indefinitely prevented from eating. It provides a fair allocation of resources to philosophers, allowing them to eventually acquire the forks.
 
 # Getting Started
-To get started with Pipex, follow these steps:
+To get started with Philosophers, follow these steps:
 
 Clone the repository to your local machine.
 Compile the source code using the provided makefile.
-Run the resulting executable, providing the appropriate command-line arguments for input and output files, as well as the two commands to execute.
-Pipex will execute the commands and redirect the input/output according to the specified file descriptors.
+Run the resulting executable, specifying the number of philosophers and any other necessary parameters.
+Observe the program's simulation of the dining philosophers problem and the philosophers' interactions.
