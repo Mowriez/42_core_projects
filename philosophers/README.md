@@ -1,6 +1,25 @@
-The philosophers project is a programming exercise from School 42.
+# Pipex
 
-It challenges students to solve the dining philosophers problem using multithreading in the C programming language. The problem requires students to write a program that simulates a group of philosophers sitting around a circular table, each thinking or eating. The philosophers must share a limited number of forks to eat their meals, but they cannot eat if they only have one fork and cannot obtain a second one. The challenge is to develop a solution that ensures all the philosophers can eat without causing deadlock and data-races. Oh and ideally, all the philosophers survive their lunch.
+# Project Overview
+The Pipex project involves creating a command-line program that mimics the behavior of the shell command pipeline (|). It takes two commands and redirects the output of the first command as the input of the second command, emulating the behavior of the shell's pipe operator.
 
-Main themes: synchronization and resource allocation in multithreaded environments. 
-Special focus: Mutexes, semaphores, and other synchronization primitives. Creative algorithm development for low-level programming problems.
+# Key Features
+The Pipex project includes the following key features:
+
+Command Execution: 
+Pipex allows users to execute two commands, just like in a shell pipeline. It handles the execution of the commands and sets up the appropriate file descriptors for input/output redirection.
+
+Input/Output Redirection: 
+Pipex supports input and output redirection using file descriptors. It allows users to specify input and output files for the commands, redirecting their standard input/output accordingly.
+
+File Creation and Permissions: The program handles the creation of output files and sets the appropriate permissions for the newly created files.
+
+Error Handling: Pipex provides error handling mechanisms for various scenarios, such as invalid commands, file-related errors, and failures during command execution.
+
+# Getting Started
+To get started with Pipex, follow these steps:
+
+Clone the repository to your local machine.
+Compile the source code using the provided makefile.
+Run the resulting executable, providing the appropriate command-line arguments for input and output files, as well as the two commands to execute.
+Pipex will execute the commands and redirect the input/output according to the specified file descriptors.
