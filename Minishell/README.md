@@ -1,5 +1,3 @@
-# Minishell (group project with @eramusho)
-
 # Project Overview
 The Minishell project involves creating a functional command-line interpreter, 
 similar to the well-known Unix shell, such as Bash or Zsh. It provides users 
@@ -37,3 +35,5 @@ be neccessary to change the path to the library to your personal file structure 
 projects' Makefile.
 Run the resulting executable to start the Minishell program.
 Use the command prompt to execute various commands and explore the shell's functionalities.
+
+# this is a group project with @eramusho
