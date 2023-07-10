@@ -1,10 +1,23 @@
-The pipex project is a programming exercise from School 42. 
+# Project Overview
+The Pipex project involves creating a command-line program that mimics the behavior of the shell command pipeline (|). It takes two commands and redirects the output of the first command as the input of the second command, emulating the behavior of the shell's pipe operator.
 
-It teaches students how to work with pipes and file redirection in a Unix-like environment.
+# Key Features
+The Pipex project includes the following key features:
 
-The task is to write a program that simulates the behavior of the shell command pipeline for a narrow set of commands, allowing users to redirect 
-input and output streams between multiple commands.
+Command Execution: 
+Pipex allows users to execute two commands, just like in a shell pipeline. It handles the execution of the commands and sets up the appropriate file descriptors for input/output redirection.
 
-This project was a great way to practice important concepts in Unix programming, such as process management, file I/O, and signal handling. It was also the bane
-of my existence, as the Error handling seemed to be quite erratic. This project is working and evaluated at 115%, but I'd say it's about 85% of what it 
-should be in terms of hard-coded features and error-handling.
+Input/Output Redirection: 
+Pipex supports input and output redirection using file descriptors. It allows users to specify input and output files for the commands, redirecting their standard input/output accordingly.
+
+File Creation and Permissions: The program handles the creation of output files and sets the appropriate permissions for the newly created files.
+
+Error Handling: Pipex provides error handling mechanisms for various scenarios, such as invalid commands, file-related errors, and failures during command execution.
+
+# Getting Started
+To get started with Pipex, follow these steps:
+
+Clone the repository to your local machine.
+Compile the source code using the provided makefile.
+Run the resulting executable, providing the appropriate command-line arguments for input and output files, as well as the two commands to execute.
+Pipex will execute the commands and redirect the input/output according to the specified file descriptors.
