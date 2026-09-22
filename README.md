@@ -1,3 +1,3 @@
 # 42_core_projects
 
-All projects I finished in the core curriculum of school 42.
+All my projects from the core curriculum of school 42.
