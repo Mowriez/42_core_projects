@@ -1,4 +1,6 @@
-# Project Overview
+# CPP Modules
+>Introduction to object-oriented programming in C++.
+## Project Overview
 The CPP Modules project involves completing a series of modules, each exploring different aspects 
 of object-oriented programming in C++. The modules cover topics such as class creation, member 
 functions, operator overloading, inheritance, polymorphism, and more.
