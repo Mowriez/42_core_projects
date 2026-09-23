@@ -1,10 +1,28 @@
-The libft project is a programming exercise from School 42.
+# Libft
+> Let's build a library of useful functions in C!
+## Overview
+This project is designed to help students develop basic skills in C programming. The goal of the project is to create a library of functions that can be used in future projects, allowing students to build upon their knowledge and skills.
 
-It teaches students how to implement common functions from the C standard library and create their own library of utility functions in C.
+# Description
 
-The task is to write a set of functions that cover a wide range of functionality, from basic string manipulation and memory allocation to more 
-advanced data structures and input/output operations.
+## Features
 
-This project was a great way to practice important concepts in C programming, such as memory allocation, pointer arithmetic, and error handling.
-t also helped me develop problem-solving skills and attention to detail, as writing a robust and efficient library that handles all possible input cases was
-quite challenging, and I'm sure even with the project being successfully evaluated I missed a bunch of test-cases.
+Diverse functions that encourage learning about:
+- memory allocation
+- pointer arithmetic
+- basic debugging and error handling
+
+## Dependencies
+- None
+
+## Build and run the project
+
+1. Clone the repository and navigate to the project directory.
+
+2. Compile the library using the provided Makefile by running the following command:
+
+        make
+
+3. The compiled library will be generated as `libft.a` in the project directory.
+
+4. It's a library, so you won't run it directly. Instead, you can use the functions in your own C programs by including the appropriate header files and linking against `libft.a`.
