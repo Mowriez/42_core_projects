@@ -1,21 +1,21 @@
 # CPP Modules
 >Introduction to object-oriented programming in C++.
 ## Project Overview
-The CPP Modules project involves completing a series of modules, each exploring different aspects 
+The project involves completing a series of modules, each exploring different aspects 
 of object-oriented programming in C++. The modules cover topics such as class creation, member 
 functions, operator overloading, inheritance, polymorphism, and more.
 
 # Modules 
-The project is divided into several modules, each addressing specific topics in 
-C++ programming. Each module builds upon the previous one, allowing for a progressive learning experience.
+Each module addresses a specific topic in 
+C++ programming. Focussing especially on the expansion of the students C programming skills into the realm of object-oriented programming.
 
-00 - specifities of C++ when compared to C -> First try at object oriented programming <br>
-01 - memory allocation, reference, pointers to members and the usage of the switch statement <br>
-02 - ad-hoc polymorphism, overloads and orthodox canonical classes <br>
-03 - inheritance <br>
-04 - subtype polymorphism, abstract classes and interfaces <br>
-05 - try/catch and exceptions <br>
-06 - casting <br>
-07 - templates <br>
-08 - templated containers, iterators and algorithms <br>
-09 - containers deep dive <br>
+0. specifities of C++ when compared to C -> First try at object oriented programming 
+1. memory allocation, reference, pointers to members and the usage of the switch statement 
+2. ad-hoc polymorphism, overloads and orthodox canonical classes 
+3. inheritance 
+4. subtype polymorphism, abstract classes and interfaces 
+5. try/catch and exceptions 
+6. casting 
+7. templates 
+8. templated containers, iterators and algorithms 
+9. containers deep dive 
