@@ -16,7 +16,7 @@ RES = \033[0m
 
 CC = gcc
 
-CCFLAG = -Wall -Werror -Wextra -Ofast
+CFLAGS = -Wall -Werror -Wextra -Ofast -std=gnu89
 
 
 NAME = cub3D
@@ -73,7 +73,7 @@ SRC = $(addprefix $(D_SRC), $(SRC_NO_DIR))
 OBJ = $(subst $(D_SRC), $(D_OBJ), $(SRC:.c=.o))
 
 $(D_OBJ)%.o: $(D_SRC)%.c
-	@$(CC) $(CCFLAG) -o $@ -c $<
+	@$(CC) $(CFLAGS) -o $@ -c $<
 	@echo "$(BLU)$@ built successfully!$(RES)"
 
 all: $(D_OBJ) $(NAME)
