@@ -52,6 +52,7 @@ void	ft_reset_view(t_fract *vars)
 
 void	ft_change_max_it(t_fract *vars, int keycode)
 {
+    ssize_t ret;
 	if (keycode == KEY_PLUS)
 	{
 		if (vars->max_it < 10)
@@ -64,9 +65,12 @@ void	ft_change_max_it(t_fract *vars, int keycode)
 		if (vars->max_it <= 10 && vars->max_it > 0)
 			vars->max_it -= 1;
 		else if (vars->max_it == 0)
-			write(1, "Max_it < 0 produces undef. behaviour and will therefore"\
-				"not be shown.\n", 70);
-		else
+            {
+                ret = write(1, "Max_it < 0 produces undef. behaviour and will therefore"\
+                    "not be shown.\n", 70);
+                (void)ret;
+            }
+        else
 			vars->max_it -= 10;
 	}
 	ft_calc_fractal(vars);

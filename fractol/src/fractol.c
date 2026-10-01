@@ -24,6 +24,7 @@ int	main(int argc, char *argv[])
 	mlx_hook(vars->win_ptr, 17, 0L, ft_end, vars);
 	mlx_hook(vars->win_ptr, 4, 0L, ft_mouse_input, vars);
 	mlx_loop(vars->mlx_ptr);
+    return (0);
 }
 
 t_fract	*ft_setup_mlx(char *width, char *fractal_set)

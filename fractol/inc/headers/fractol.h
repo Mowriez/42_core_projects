@@ -14,9 +14,17 @@
 # define FRACTOL_H
 
 # include "../libft/libft.h"
-# include "../mlx/mlx.h"
 # include "./keymacros.h"
 # include <math.h>
+# include <stdio.h>
+
+// OS specific mlx headers ---------------------------------------------------
+# ifdef __linux__
+#  include "../mlx/minilibx-linux/mlx.h"
+
+# elif defined(__APPLE__)
+#  include "../mlx/minilibx_opengl_20191021/mlx.h"
+# endif
 
 typedef struct s_fract {
 	void			*mlx_ptr;

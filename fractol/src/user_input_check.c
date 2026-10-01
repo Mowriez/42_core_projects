@@ -15,18 +15,21 @@
 int	ft_input_check(int count, char **args)
 {
 	int	i;
+    ssize_t ret;
 
 	i = 0;
 	if (count != 3)
 	{
-		write(1, "\x1b[31mInvalid number of arguments - needs 2\n1. 800 <= Img "\
+		ret = write(1, "\x1b[31mInvalid number of arguments - needs 2\n1. 800 <= Img "\
 		"width <=1920 and\n2. Name of fractol = (Mandelbrot || Julia "\
 		"|| BS)\nImage height is calculated automatically.\n\x1b[0m", 170);
+        (void)ret;
 		return (i);
 	}
 	if (ft_atoi(args[1]) < 800 || ft_atoi(args[1]) > 1920)
 	{
-		write(1, "\x1b[33mchoose parameter 1: 800 <= width <= 1920\n\x1b[0m", 51);
+		ret = write(1, "\x1b[33mchoose parameter 1: 800 <= width <= 1920\n\x1b[0m", 51);
+        (void)ret;
 		return (i);
 	}
 	i = ft_input_check_fractal(args[2]);
@@ -36,13 +39,15 @@ int	ft_input_check(int count, char **args)
 int	ft_input_check_fractal(char *fractal)
 {
 	int	j;
+    ssize_t ret;
 
 	j = ft_strncmp("Mandelbrot", fractal, 11) * ft_strncmp("Julia", fractal, 5) \
 		* ft_strncmp("BS", fractal, 2);
 	if (j != 0)
 	{
-		write(1, "\x1b[31mNo valid fractal set requested. Choose:\nMandelbrot or\n"\
+		ret = write(1, "\x1b[31mNo valid fractal set requested. Choose:\nMandelbrot or\n"\
 				"Julia or\nBS (Burning Ships)\n\x1b[0m", 92);
+		(void)ret;
 		return (0);
 	}
 	return (1);
