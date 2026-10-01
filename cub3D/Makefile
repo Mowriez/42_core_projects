@@ -18,7 +18,6 @@ CC = gcc
 
 CFLAGS = -Wall -Werror -Wextra -Ofast -std=gnu89
 
-
 NAME = cub3D
 
 SRC_NO_DIR =	cast_drawer.c \
