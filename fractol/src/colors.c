@@ -20,29 +20,29 @@ void	ft_change_prime_color(t_fract *vars, int keycode)
 
 void	ft_color_options(t_fract *vars, double shift)
 {
-	if (vars->prime_color == 18)
+	if (vars->prime_color == KEY_1)
 	{
 		vars->div_color = 0x000F0F0F + ((shift / 2) * 0x00080808);
 		vars->conv_color = 0x00000000;
 	}
-	else if (vars->prime_color == 19)
+	else if (vars->prime_color == KEY_2)
 	{
 		vars->div_color = 0x000F0000 + ((shift / 2) * 0x00080000);
 		vars->conv_color = 0x00110000;
 	}
-	else if (vars->prime_color == 20)
+	else if (vars->prime_color == KEY_3)
 	{
 		vars->div_color = 0x00000F00 + ((shift / 2) * 0x00000800);
 		vars->conv_color = 0x00001100;
 	}
-	else if (vars->prime_color == 21)
+	else if (vars->prime_color == KEY_4)
 	{
 		vars->div_color = 0x0000000F + ((shift / 2) * 0x00000008);
 		vars->conv_color = 0x00000011;
 	}
-	else if (vars->prime_color == 22)
+	else if (vars->prime_color == KEY_5)
 		ft_color_rainbow(vars, shift);
-	else if (vars->prime_color == 23)
+	else if (vars->prime_color == KEY_6)
 		ft_color_fire(vars, shift);
 	vars->hud_color = (vars->conv_color / 2) + 0x00666666;
 }

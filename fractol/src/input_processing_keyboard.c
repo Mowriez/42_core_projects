@@ -14,9 +14,9 @@
 
 int	ft_keyboard_input(int keycode, t_fract *vars)
 {	
-	if (keycode >= 123 && keycode <= 126)
+	if ((OS_Linux && keycode >= 65361 && keycode <= 65364) || (!OS_Linux && keycode >= 123 && keycode <= 126))
 		ft_pan_view(vars, keycode);
-	if (keycode >= 18 && keycode <= 23)
+	if ((OS_Linux && keycode >= 49 && keycode <= 54) || (!OS_Linux && keycode >= 18 && keycode <= 23))
 		ft_change_prime_color(vars, keycode);
 	if (keycode == KEY_PLUS || keycode == KEY_MINUS)
 		ft_change_max_it(vars, keycode);

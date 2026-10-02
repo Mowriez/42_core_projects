@@ -15,27 +15,30 @@
 
 // TODO: Still no capture for key for whatever reason.
 # ifdef __linux__
+#  define OS_Linux 1
 #  define MOUSE_WHEEL_UP 4
 #  define MOUSE_WHEEL_DOWN 5
 #  define MOUSE_LEFT 1
 #  define MOUSE_RIGHT 3
 #  define MOUSE_SCROLL_RIGHT 6
 #  define MOUSE_SCROLL_LEFT 7
-#  define KEY_ESCAPE 9
-#  define KEY_UP 111
-#  define KEY_DOWN 116
-#  define KEY_LEFT 113
-#  define KEY_RIGHT 114
-#  define KEY_1 10
-#  define KEY_2 11
-#  define KEY_3 12
-#  define KEY_4 13
-#  define KEY_5 14
-#  define KEY_R 27
-#  define KEY_PLUS 35
-#  define KEY_MINUS 61
+#  define KEY_ESCAPE 65307
+#  define KEY_UP 65362
+#  define KEY_DOWN 65364
+#  define KEY_LEFT 65361
+#  define KEY_RIGHT 65363
+#  define KEY_1 49
+#  define KEY_2 50
+#  define KEY_3 51
+#  define KEY_4 52
+#  define KEY_5 53
+#  define KEY_6 54
+#  define KEY_R 114
+#  define KEY_PLUS 43
+#  define KEY_MINUS 45
 
 # elif defined(__APPLE__)
+#  define OS_Linux 0
 #  define MOUSE_WHEEL_UP 4
 #  define MOUSE_WHEEL_DOWN 5
 #  define MOUSE_LEFT 1
@@ -52,6 +55,7 @@
 #  define KEY_3 20
 #  define KEY_4 21
 #  define KEY_5 22
+#  define KEY_6 23
 #  define KEY_R 15
 #  define KEY_PLUS 30
 #  define KEY_MINUS 44

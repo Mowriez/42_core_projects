@@ -45,7 +45,7 @@ void	ft_set_std_vars_mandel(t_fract *std_vars)
 	std_vars->conv_color = 0;
 	std_vars->zoom_factor = 2;
 	std_vars->zoom_step = 1;
-	std_vars->prime_color = 18;
+	std_vars->prime_color = KEY_1;
 }
 
 void	ft_set_std_vars_julia(t_fract *std_vars)
@@ -63,7 +63,7 @@ void	ft_set_std_vars_julia(t_fract *std_vars)
 	std_vars->conv_color = 0;
 	std_vars->zoom_factor = 2;
 	std_vars->zoom_step = 1;
-	std_vars->prime_color = 18;
+	std_vars->prime_color = KEY_1;
 }
 
 void	ft_set_std_vars_burning_ships(t_fract *std_vars)
@@ -79,5 +79,5 @@ void	ft_set_std_vars_burning_ships(t_fract *std_vars)
 	std_vars->conv_color = 0;
 	std_vars->zoom_factor = 2;
 	std_vars->zoom_step = 1;
-	std_vars->prime_color = 18;
+	std_vars->prime_color = KEY_1;
 }
