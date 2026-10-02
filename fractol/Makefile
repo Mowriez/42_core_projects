@@ -13,7 +13,7 @@
 NAME = fractol
 
 CC = cc
-CFLAGS =  -O3 -std=gnu89
+CFLAGS = -std=gnu89 -O3 -march=native -ffast-math
 
 # --- Operating System & MLX Setup ---
 UNAME_S := $(shell uname -s)
