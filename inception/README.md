@@ -23,7 +23,7 @@ This project is about setting up a small webserver infrastructure composed of di
 
 1. Clone the repository and navigate to the project directory.
 
-2. Set up the environment variables by creating a `.env` file in the project root directory. You can use the provided `.env.example` file as a template.
+2. Set up the secrets and credentials for the project by adapting the files in `srcs/secrets` to your needs. Rename them to `filename.txt` (e.g., `db_password.template` to `db_password.txt`). By default, the project is set up to not push any .txt files in this directory to the repository, so you can safely store your credentials there.
 
 2. Run the following command to build and start the services:
 
@@ -31,4 +31,24 @@ This project is about setting up a small webserver infrastructure composed of di
 
 3. Access the WordPress site by navigating to `https://localhost` in your web browser. You may need to accept the self-signed certificate warning.
 
-4. As the database is protected behind the nginx reverse proxy, you can access it by navigating to `https://localhost/phpmyadmin` in your web browser. Use the credentials specified in the docker-compose.yml file to log in.
+4. As the database is protected behind the nginx reverse proxy, you can only access it through the Docker container. To access the database, you can use the following command:
+
+        docker exec -it mariadb mysql -u root -p
+
+## Cleanup
+
+1. To stop the services, run the following command:
+
+        make down
+
+2. To delete the Docker containers, run the following command:
+
+        make clean
+
+3. To delete the Docker containers and remove all associated data, run the following command:
+
+        make fclean
+
+4. To remove the build cache in Docker, run the following command:
+
+        make nuke
