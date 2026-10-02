@@ -14,7 +14,7 @@ Cub3D is a project that focuses on raycasting, a technique used to render 3D env
 
 ## Dependencies
 
-- MinilibX: A simple X Window System library graphical output. Can be installed with (linux environment):
+- MinilibX: A simple X Window System library graphical output. The MinilibX library itself is available in the project files, its dependencies can be installed with (linux environment):
 
         sudo apt update
         sudo apt install -y build-essential libx11-dev libxext-dev libbsd-dev libxrandr-dev
