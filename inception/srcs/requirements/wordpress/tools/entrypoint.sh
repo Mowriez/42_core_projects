@@ -34,4 +34,4 @@ fi
 echo -e "\e[1;32mwp setup done!\e[0m"
 
 # Start php-fpm
-php-fpm7.4 -F
+php-fpm8.2 -F

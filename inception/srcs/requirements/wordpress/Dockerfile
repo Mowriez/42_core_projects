@@ -1,4 +1,4 @@
-FROM debian:11
+FROM debian:12
 
 RUN apt-get update && apt-get install -y \
     php-fpm \
@@ -21,8 +21,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 #really only need the first 3 for demonstration purposes
 
-RUN rm /etc/php/7.4/fpm/pool.d/www.conf
-COPY ./tools/www.conf /etc/php/7.4/fpm/pool.d/
+RUN rm /etc/php/8.2/fpm/pool.d/www.conf
+COPY ./tools/www.conf /etc/php/8.2/fpm/pool.d/
 
 COPY ./tools/entrypoint.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/entrypoint.sh

@@ -1,5 +1,4 @@
-# Use the penultimate version of Debian
-FROM debian:11
+FROM debian:12
 
 RUN apt-get update && apt-get install -y nginx openssl
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
