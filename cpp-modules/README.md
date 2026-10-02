@@ -5,7 +5,10 @@ The project involves completing a series of modules, each exploring different as
 of object-oriented programming in C++. The modules cover topics such as class creation, member 
 functions, operator overloading, inheritance, polymorphism, and more.
 
-# Modules 
+
+# Description
+
+## Modules 
 Each module addresses a specific topic in 
 C++ programming. Focussing especially on the expansion of the students C programming skills into the realm of object-oriented programming.
 
@@ -19,3 +22,11 @@ C++ programming. Focussing especially on the expansion of the students C program
 7. templates 
 8. templated containers, iterators and algorithms 
 9. containers deep dive 
+
+## Build and run the project
+
+1. Clone the repository and navigate to the module you want to check out
+
+2. Compile it with 'make'
+
+3. Run the resulting executable to see the output of the module. Each module has its own main function that demonstrates the concepts covered in that module.

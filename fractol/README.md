@@ -8,9 +8,9 @@ Fractal is a project that focuses on creating and exploring fractals, which are 
 
 ## Features
 
-- Fractal Generation: Implements algorithms to generate different types of fractals.<br>
-- User Interface: Provides a simple and intuitive interface for interacting with the fractals.<br>
-- Interactive Exploration: Allows users to zoom, pan, and change color schemes.<br>
+- **Fractal Generation**: Implements algorithms to generate different types of fractals.<br>
+- **User Interface**: Provides a simple and intuitive interface for interacting with the fractals.<br>
+- **Interactive Exploration**: Allows users to zoom, pan, and change color schemes.<br>
 
 ## Dependencies
 

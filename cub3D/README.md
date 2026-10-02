@@ -7,10 +7,10 @@ Cub3D is a project that focuses on raycasting, a technique used to render 3D env
 
 ## Features
 
-- Raycasting Engine: Utilizes the raycasting technique to render a 3D environment.<br>
-- Map Parsing: Reads a simple map from a provided file to generate the game world.<br>
-- Textured Walls: Renders textured walls to enhance the visual experience.<br>
-- Player Movement: Allows the player to move within the 3D space and rotate the view.<br>
+- **Raycasting Engine**: Utilizes the raycasting technique to render a 3D environment.<br>
+- **Map Parsing**: Reads a simple map from a provided file to generate the game world.<br>
+- **Textured Walls**: Renders textured walls to enhance the visual experience.<br>
+- **Player Movement**: Allows the player to move within the 3D space and rotate the view.<br>
 
 ## Dependencies
 
