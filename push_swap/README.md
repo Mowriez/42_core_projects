@@ -1,11 +1,25 @@
-The push_swap project is a programming exercise from School 42. 
+# PushSwap
+> Y'all got any more of them sorting algorithms?
 
-It teaches students how to sort a stack of integers using only only a limited amount of stack operations and a second, empty stack.
-The task is to write a program that takes an unsorted stack of integers as input and outputs a series of instructions that, when executed, 
-will sort the stack in ascending order.
+# Overview
+The push_swap project sorts a stack of integers using a limited set of operations. The goal is to sort the stack in ascending order with the least number of operations possible. The project involves creating a program that takes an unsorted stack of integers as input and outputs a series of instructions that, when executed, will sort the stack.
 
-This project helped learning important concepts in algorithm design and complexity analysis, as well as developing my skills in C programming and problem solving. 
-It also helped develop skills in parsing and the ability to handle edge cases, as the input could be quite diverse and catching all edge-cases was difficult.
+# Description
+## Features
 
-My project uses a proprietary algorithm to sort up to 5 elements, and for bigger stacks it uses the radix sort algorithm applied to the binary representation of the 
-numbers in a pre-indexed stack.
+- **Stack Operations**: The program implements a set of stack operations, including push, swap, rotate, and reverse rotate, to manipulate the stack of integers.<br>
+- **Sorting Algorithm**: The program uses a proprietary algorithm to sort stacks of up to 5 elements and the radix sort algorithm for larger stacks.<br>
+- **Input Validation**: The program checks for valid input, ensuring that the provided integers are within the acceptable range and that there are no duplicates.<br>
+- **Output Instructions**: The program outputs a series of instructions that, when executed, will sort the stack in ascending order.
+
+## Build and run the project
+
+1. Clone the repository and compile it with 'make'.
+
+2. Run the following command from the terminal to start the program, specifying the unsorted stack of integers as input:
+
+        ./push_swap <integer1> <integer2> <integer3> ...
+
+3. The program will output a series of instructions that, when executed, will sort the stack in ascending order.
+
+4. Validating the output was done by an internal checker program. If you don't have access to 42 intra, you can check small stacks by hand.
