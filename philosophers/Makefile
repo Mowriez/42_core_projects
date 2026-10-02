@@ -13,8 +13,9 @@
 NAME = philo
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror 
-#-g -fsanitize=address
+CFLAGS = 
+
+# -Wall -Wextra -Werror 
 
 OBJ = $(SRC:%.c=%.o)
 
@@ -32,9 +33,6 @@ HDR = ./inc/philo.h
 
 SRC = $(addprefix ./src/,$(SRC_NODIR))
 
-#compile source files without linking. Is used to only update the source files
-#neccessary. If you would compile all the .c files everytime one of them
-#changes, your Makefile would be slower.
 %.o: %.c
 	$(CC) $(CFLAGS) -c $^ -o $@
 
