@@ -1,7 +1,18 @@
-The printf project is a programming exercise from School 42.
+# Printf
+> Expand your library!
 
-It teaches students how to implement their own version of the printf function in C. 
-The task is to write a function that can format and print a small range of data types to the console, using format specifiers such as %d, %s, and %f.
+# Overview
+The Printf project is a programming assignment that focuses on implementing a custom version of the printf function in the C programming language.
 
-This project was really fun and helped to practice important concepts in C programming, especially variable argument lists, 
-string manipulation, and low-level I/O operations.
+# Description
+## Features
+
+- **Custom Printf Implementation**: Supports a subset of format specifiers and handles various data types.
+
+## Build and run the project
+
+1. Clone the repository and compile it with 'make'.
+
+2. The resulting library can be linked to other C programs to use the custom printf function.
+
+3. Nothing more, just include the header file and call your custom printf function in your code.
